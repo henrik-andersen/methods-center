@@ -1,0 +1,123 @@
+---
+title: "Über das MKZ | About the MKZ"
+image: logo-final_2.png
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+
+---
+
+::: {.panel-tabset group="language"}
+
+## German 
+
+### Über das MKZ
+
+Das MethodenKompetenzZentrum (MKZ) wurde 2015 gegründet und hat sich zur Aufgabe gemacht mit Rat und Tat bei methodischen Herausforderungen zur Seite zu stehen. Durch ein vielfältiges Angebot von Workshops, methodischen Beratungen, Vorträgen, Vorlesungen und Werkstattgesprächen wollen wir eigene Forschungsvorhaben (Qualifikationsarbeiten, Forschungsprojekte, methodische Weiterentwicklungen u.v.m.) kompetent unterstützen.Das MKZ ermöglicht Studierenden und Mitarbeitenden ihre eigenen methodischen Erfahrungen und Kompetenzen interdisziplinär einzubringen und weiterzuentwickeln.
+
+Diese interdisziplinäre Kooperation des Instituts für Angewandte Bewegungswissenschaften, Instituts für Psychologie und des Instituts der Soziologie bietet eine Plattform zum Informieren, Handeln und über den Tellerrand der eigenen Disziplin zuschauen.
+
+### Koordination 
+
+::: {.grid}
+
+::: {.g-col-4}
+![](mjoc.jpg)
+:::
+
+::: {.g-col-8}
+**Prof. Dr. Jochen Mayerl** <br>
+Institut für Soziologie <br>
+Soziologie mit Schwerpunkt Empirische Sozialforschung 
+
+Tel.: +49 371 531-37130 <br>
+E-Mail: [jochen.mayerl@soziologie.tu-chemnitz.de](jochen.mayerl@soziologie.tu-chemnitz.de)
+:::
+
+:::
+
+::: {.grid}
+
+::: {.g-col-4}
+![](bmas.jpg)
+:::
+
+::: {.g-col-8}
+**Britta Maskow, M.A.** <br>
+Institut für Soziologie <br>
+Soziologie mit Schwerpunkt Empirische Sozialforschung 
+
+Tel.: +49 371 531-36076 <br>
+E-Mail: [britta.maskow@soziologie.tu-chemnitz.de](britta.maskow@soziologie.tu-chemnitz.de)
+:::
+
+:::
+
+#### Weitere Mitglieder
+
+**Prof. Dr. Peter Kriwy**, Institut für Soziologie, Soziologie mit Schwerpunkt Gesundheitsforschung <br>
+**Prof. Dr. Christian Maiwald**, Institut für Angewandte Bewegungswissenschaften, Angewandete Bewegungswissenschaften mit Schwerpunkt auf Forschungsmethoden und Analyseverfahren in der Biomechanik <br>
+**Prof. Dr. Peter Sedlmeier**, Institut für Psychologie, Forschungsmethodik und Evaluation in der Psychologie 
+
+## English 
+
+### About the MKZ
+
+The MethodenKompetenzZentrum (MKZ) was founded in 2015 and has set itself the task of providing advice and support for methodological challenges. Through a diverse range of workshops, methodological consultations, lectures, talks and workshops, we aim to provide competent support for our own research projects (theses, research projects, methodological developments, etc.). The MKZ enables students and staff to contribute and further develop their own methodological experiences and competencies in an interdisciplinary manner.
+
+This interdisciplinary cooperation of the Institute of Applied Movement Sciences, the Institute of Psychology and the Institute of Sociology offers a platform to inform, to act and to look beyond one's own discipline.
+
+### Coordinators
+
+::: {.grid}
+
+::: {.g-col-4}
+![](mjoc.jpg)
+:::
+
+::: {.g-col-8}
+**Prof. Dr. Jochen Mayerl** <br>
+Institute of Sociology <br>
+Sociology with a Focus on Empirical Social Research 
+
+Tel.: +49 371 531-37130 <br>
+E-Mail: [jochen.mayerl@soziologie.tu-chemnitz.de](jochen.mayerl@soziologie.tu-chemnitz.de)
+:::
+
+:::
+
+::: {.grid}
+
+::: {.g-col-4}
+![](bmas.jpg)
+:::
+
+::: {.g-col-8}
+**Britta Maskow, M.A.** <br>
+Institute of Sociology <br>
+Sociology with a Focus on Empirical Social Research 
+
+Tel.: +49 371 531-36076 <br>
+E-Mail: [britta.maskow@soziologie.tu-chemnitz.de](britta.maskow@soziologie.tu-chemnitz.de)
+:::
+
+:::
+
+#### Other Members 
+
+**Prof. Dr. Peter Kriwy**, Institute of Sociology, Sociology with Specialization in Health Research  <br>
+**Prof. Dr. Christian Maiwald**, Institute of Human Movement Science and Health, Professorship of Research Methodology and Data Analyses <br>
+**Prof. Dr. Peter Sedlmeier**, Institute of Psychology, Professorship of Research Methods and Evaluation
+
+:::
+
+

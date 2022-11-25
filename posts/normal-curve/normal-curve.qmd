@@ -1,0 +1,116 @@
+---
+title: "Overlaying a Normal Curve on a Histogram in R"
+author: 
+  - name: Henrik Kenneth Andersen
+    orcid: 0000-0001-6842-5337
+    email: henrik.andersen@soziologie.tu-chemnitz.de
+    affiliations: 
+      - name: Chemnitz University of Technology
+        address: Thueringer Weg 9
+        city: Chemnitz 
+        state: Saxony
+        postal-code: 09126
+date: "2022-11-25"
+categories: [R, linear regression, residual diagnostics]
+toc: true 
+smooth-scroll: true
+citation: true
+abstract: "This brief blog post will show you how to overlay a normal density curve on a histogram. This can be helpful for comparing empirical distributions to the theoretical normal distribution, which comes up often in linear regression residual diagnostics."
+---
+
+## Introduction 
+
+Those of us socialized in `SPSS` might remember being able to check a box labeled "Display normal curve" when creating a histogram. This was a really easy step and it made it straightforward to compare the empirical frequencies with an appropriate normal distribution. 
+
+::: {layout-ncol=2}
+
+![](makeahistogram2.jpg)
+
+![](makeahistogram3.jpg)
+
+:::
+
+Source: https://ezspss.com/how-to-make-a-histogram-in-spss/
+
+When we apply ordinary linear regression, it is helpful to check the residual distribution for normality. Only if the residuals are normally distributed can the usual normal theory-based inference be applied. 
+
+But `R` doesn't offer an easy way to overlay a normal distribution in a histogram. But don't fret: this quick blog post will show you how to do it. 
+
+## Simulating some data for demonstration 
+
+Let's quickly simulate some data and then run a linear regression to inspect the normality of the residuals. 
+
+```{r}
+set.seed(1234)
+
+n <- 1000L
+w <- rnorm(n = n, mean = 2, sd = 4)
+y <- 0.5 * w + rnorm(n = n, mean = 5, sd = 3)
+
+df <- data.frame(w, y)
+
+m1 <- lm(formula = y ~ w, data = df)
+summary(m1)
+```
+
+## Assessing normality of residuals
+
+We can get the diagnostic plots using `plot()`. The plot for normality of the residuals is the second one. 
+
+```{r}
+plot(m1, 2)
+```
+
+This is a Q-Q-plot. It shows the standardized residuals plotted against the theoretical standard normal distribution. The standard normal distribution tells us, for example, that about 2.5% of the density should be found 1.96 standard deviations below the mean. 
+
+```{r}
+pnorm(-1.96, mean = 0, sd = 1)
+```
+
+So, if our empirical distribution were normal, then about 2.5% of the distribution should fall below that critical value. The closer the empirical distribution of the standardized residuals follows that of a standard normal distribution, the more nicely the points will fall directly on the diagonal line. 
+
+This isn't super complicated, by I have found it a bit difficult to explain to students sometimes. A histogram for assessing normality is, in my opinion, didactically a bit more easy to work with. 
+
+We can plot the residuals as a histogram easily, as well: 
+
+```{r}
+hist(m1$residuals, breaks = 20L, main = "")
+```
+
+At this point, we could decide to standardize the residuals by dividing each by the standard deviation, but that's not strictly necessary. 
+
+## Overlaying a normal density curve
+
+But let's say we wanted to overlay a nice normal distribution curve. What we can do is 
+
+1. produce the histogram in terms of the density, rather than the frequencies 
+2. calculate the density of the normal distribution using `dnorm()` and over the range of the residuals. 
+
+```{r}
+hist(m1$residuals, breaks = 20L, freq = FALSE, main = "")
+
+# Note that the sequence here must be called "x", otherwise dnorm() won't work 
+x <- seq(from = round(min(m1$residuals), 1), 
+         to   = round(max(m1$residuals), 1), 
+         by   = 0.1)
+
+curve(dnorm(x, mean = 0, sd = sd(m1$residuals)), add = TRUE)
+```
+
+Now, if we wanted to look at the standardized residuals instead, we could do: 
+
+```{r}
+std_res <- m1$residuals / sd(m1$residuals)
+
+hist(std_res, breaks = 20L, freq = FALSE, main = "")
+
+x <- seq(from = round(min(std_res), 1),
+         to   = round(max(std_res), 1),
+         by   = 0.1)
+
+curve(dnorm(x, mean = 0, sd = 1), add = TRUE)
+```
+
+## About the author 
+
+Henrik Kenneth Andersen is a Postdoc at the Chemnitz University of Technology, Institute of Sociology. 

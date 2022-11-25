@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Über das MKZ | About the MKZ",
+    "section": "",
+    "text": "GermanEnglish\n\n\n\n\nDas MethodenKompetenzZentrum (MKZ) wurde 2015 gegründet und hat sich zur Aufgabe gemacht mit Rat und Tat bei methodischen Herausforderungen zur Seite zu stehen. Durch ein vielfältiges Angebot von Workshops, methodischen Beratungen, Vorträgen, Vorlesungen und Werkstattgesprächen wollen wir eigene Forschungsvorhaben (Qualifikationsarbeiten, Forschungsprojekte, methodische Weiterentwicklungen u.v.m.) kompetent unterstützen.Das MKZ ermöglicht Studierenden und Mitarbeitenden ihre eigenen methodischen Erfahrungen und Kompetenzen interdisziplinär einzubringen und weiterzuentwickeln.\nDiese interdisziplinäre Kooperation des Instituts für Angewandte Bewegungswissenschaften, Instituts für Psychologie und des Instituts der Soziologie bietet eine Plattform zum Informieren, Handeln und über den Tellerrand der eigenen Disziplin zuschauen.\n\n\n\n\n\n\n\n\nProf. Dr. Jochen Mayerl  Institut für Soziologie  Soziologie mit Schwerpunkt Empirische Sozialforschung\nTel.: +49 371 531-37130  E-Mail: jochen.mayerl@soziologie.tu-chemnitz.de\n\n\n\n\n\n\n\nBritta Maskow, M.A.  Institut für Soziologie  Soziologie mit Schwerpunkt Empirische Sozialforschung\nTel.: +49 371 531-36076  E-Mail: britta.maskow@soziologie.tu-chemnitz.de\n\n\n\n\nProf. Dr. Peter Kriwy, Institut für Soziologie, Soziologie mit Schwerpunkt Gesundheitsforschung  Prof. Dr. Christian Maiwald, Institut für Angewandte Bewegungswissenschaften, Angewandete Bewegungswissenschaften mit Schwerpunkt auf Forschungsmethoden und Analyseverfahren in der Biomechanik  Prof. Dr. Peter Sedlmeier, Institut für Psychologie, Forschungsmethodik und Evaluation in der Psychologie\n\n\n\n\n\n\nThe MethodenKompetenzZentrum (MKZ) was founded in 2015 and has set itself the task of providing advice and support for methodological challenges. Through a diverse range of workshops, methodological consultations, lectures, talks and workshops, we aim to provide competent support for our own research projects (theses, research projects, methodological developments, etc.). The MKZ enables students and staff to contribute and further develop their own methodological experiences and competencies in an interdisciplinary manner.\nThis interdisciplinary cooperation of the Institute of Applied Movement Sciences, the Institute of Psychology and the Institute of Sociology offers a platform to inform, to act and to look beyond one’s own discipline.\n\n\n\n\n\n\n\n\nProf. Dr. Jochen Mayerl  Institute of Sociology  Sociology with a Focus on Empirical Social Research\nTel.: +49 371 531-37130  E-Mail: jochen.mayerl@soziologie.tu-chemnitz.de\n\n\n\n\n\n\n\nBritta Maskow, M.A.  Institute of Sociology  Sociology with a Focus on Empirical Social Research\nTel.: +49 371 531-36076  E-Mail: britta.maskow@soziologie.tu-chemnitz.de\n\n\n\n\nProf. Dr. Peter Kriwy, Institute of Sociology, Sociology with Specialization in Health Research  Prof. Dr. Christian Maiwald, Institute of Human Movement Science and Health, Professorship of Research Methodology and Data Analyses  Prof. Dr. Peter Sedlmeier, Institute of Psychology, Professorship of Research Methods and Evaluation"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog für Sozialwissenschaftliche Methoden",
+    "section": "",
+    "text": "R\n\n\nlinear regression\n\n\nresidual diagnostics\n\n\n\n\nThis brief blog post will show you how to overlay a normal density curve on a histogram. This can be helpful for comparing empirical distributions to the theoretical normal distribution, which comes up often in linear regression residual diagnostics.\n\n\n\n\n\n\nNov 25, 2022\n\n\nHenrik Kenneth Andersen\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/normal-curve/normal-curve.html",
+    "href": "posts/normal-curve/normal-curve.html",
+    "title": "Overlaying a Normal Curve on a Histogram in R",
+    "section": "",
+    "text": "Those of us socialized in SPSS might remember being able to check a box labeled “Display normal curve” when creating a histogram. This was a really easy step and it made it straightforward to compare the empirical frequencies with an appropriate normal distribution.\n\n\n\n\n\n\n\n\n\n\nSource: https://ezspss.com/how-to-make-a-histogram-in-spss/\nWhen we apply ordinary linear regression, it is helpful to check the residual distribution for normality. Only if the residuals are normally distributed can the usual normal theory-based inference be applied.\nBut R doesn’t offer an easy way to overlay a normal distribution in a histogram. But don’t fret: this quick blog post will show you how to do it."
+  },
+  {
+    "objectID": "posts/normal-curve/normal-curve.html#simulating-some-data-for-demonstration",
+    "href": "posts/normal-curve/normal-curve.html#simulating-some-data-for-demonstration",
+    "title": "Overlaying a Normal Curve on a Histogram in R",
+    "section": "Simulating some data for demonstration",
+    "text": "Simulating some data for demonstration\nLet’s quickly simulate some data and then run a linear regression to inspect the normality of the residuals.\n\nset.seed(1234)\n\nn <- 1000L\nw <- rnorm(n = n, mean = 2, sd = 4)\ny <- 0.5 * w + rnorm(n = n, mean = 5, sd = 3)\n\ndf <- data.frame(w, y)\n\nm1 <- lm(formula = y ~ w, data = df)\nsummary(m1)\n\n\nCall:\nlm(formula = y ~ w, data = df)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-9.4982 -1.9317  0.0435  1.9611  9.2053 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)  4.96440    0.10293   48.23   <2e-16 ***\nw            0.54178    0.02332   23.23   <2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.94 on 998 degrees of freedom\nMultiple R-squared:  0.351, Adjusted R-squared:  0.3504 \nF-statistic: 539.8 on 1 and 998 DF,  p-value: < 2.2e-16"
+  },
+  {
+    "objectID": "posts/normal-curve/normal-curve.html#assessing-normality-of-residuals",
+    "href": "posts/normal-curve/normal-curve.html#assessing-normality-of-residuals",
+    "title": "Overlaying a Normal Curve on a Histogram in R",
+    "section": "Assessing normality of residuals",
+    "text": "Assessing normality of residuals\nWe can get the diagnostic plots using plot(). The plot for normality of the residuals is the second one.\n\nplot(m1, 2)\n\n\n\n\nThis is a Q-Q-plot. It shows the standardized residuals plotted against the theoretical standard normal distribution. The standard normal distribution tells us, for example, that about 2.5% of the density should be found 1.96 standard deviations below the mean.\n\npnorm(-1.96, mean = 0, sd = 1)\n\n[1] 0.0249979\n\n\nSo, if our empirical distribution were normal, then about 2.5% of the distribution should fall below that critical value. The closer the empirical distribution of the standardized residuals follows that of a standard normal distribution, the more nicely the points will fall directly on the diagonal line.\nThis isn’t super complicated, by I have found it a bit difficult to explain to students sometimes. A histogram for assessing normality is, in my opinion, didactically a bit more easy to work with.\nWe can plot the residuals as a histogram easily, as well:\n\nhist(m1$residuals, breaks = 20L, main = \"\")\n\n\n\n\nAt this point, we could decide to standardize the residuals by dividing each by the standard deviation, but that’s not strictly necessary."
+  },
+  {
+    "objectID": "posts/normal-curve/normal-curve.html#overlaying-a-normal-density-curve",
+    "href": "posts/normal-curve/normal-curve.html#overlaying-a-normal-density-curve",
+    "title": "Overlaying a Normal Curve on a Histogram in R",
+    "section": "Overlaying a normal density curve",
+    "text": "Overlaying a normal density curve\nBut let’s say we wanted to overlay a nice normal distribution curve. What we can do is\n\nproduce the histogram in terms of the density, rather than the frequencies\ncalculate the density of the normal distribution using dnorm() and over the range of the residuals.\n\n\nhist(m1$residuals, breaks = 20L, freq = FALSE, main = \"\")\n\n# Note that the sequence here must be called \"x\", otherwise dnorm() won't work \nx <- seq(from = round(min(m1$residuals), 1), \n         to   = round(max(m1$residuals), 1), \n         by   = 0.1)\n\ncurve(dnorm(x, mean = 0, sd = sd(m1$residuals)), add = TRUE)\n\n\n\n\nNow, if we wanted to look at the standardized residuals instead, we could do:\n\nstd_res <- m1$residuals / sd(m1$residuals)\n\nhist(std_res, breaks = 20L, freq = FALSE, main = \"\")\n\nx <- seq(from = round(min(std_res), 1),\n         to   = round(max(std_res), 1),\n         by   = 0.1)\n\ncurve(dnorm(x, mean = 0, sd = 1), add = TRUE)"
+  },
+  {
+    "objectID": "posts/normal-curve/normal-curve.html#about-the-author",
+    "href": "posts/normal-curve/normal-curve.html#about-the-author",
+    "title": "Overlaying a Normal Curve on a Histogram in R",
+    "section": "About the author",
+    "text": "About the author\nHenrik Kenneth Andersen is a Postdoc at the Chemnitz University of Technology, Institute of Sociology."
+  }
+]
