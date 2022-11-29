@@ -3,7 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "TU Chemnitz | MethodenKompetenzZentrum"
+  title: "TU Chemnitz | Methods Competency Center"
+  subtitle: "MethodenKompetenzZentrum"
   navbar:
     right:
       - about.qmd
@@ -11,6 +12,9 @@ website:
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+    left: 
+      - text: "Home"
+        file: index.qmd
 format:
   html:
     theme: cosmo

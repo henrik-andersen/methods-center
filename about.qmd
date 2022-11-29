@@ -1,5 +1,5 @@
 ---
-title: "Über das MKZ | About the MKZ"
+title: "About"
 image: logo-final_2.png
 about:
   template: trestles
@@ -17,56 +17,6 @@ about:
 ---
 
 ::: {.panel-tabset group="language"}
-
-## German 
-
-### Über das MKZ
-
-Das MethodenKompetenzZentrum (MKZ) wurde 2015 gegründet und hat sich zur Aufgabe gemacht mit Rat und Tat bei methodischen Herausforderungen zur Seite zu stehen. Durch ein vielfältiges Angebot von Workshops, methodischen Beratungen, Vorträgen, Vorlesungen und Werkstattgesprächen wollen wir eigene Forschungsvorhaben (Qualifikationsarbeiten, Forschungsprojekte, methodische Weiterentwicklungen u.v.m.) kompetent unterstützen.Das MKZ ermöglicht Studierenden und Mitarbeitenden ihre eigenen methodischen Erfahrungen und Kompetenzen interdisziplinär einzubringen und weiterzuentwickeln.
-
-Diese interdisziplinäre Kooperation des Instituts für Angewandte Bewegungswissenschaften, Instituts für Psychologie und des Instituts der Soziologie bietet eine Plattform zum Informieren, Handeln und über den Tellerrand der eigenen Disziplin zuschauen.
-
-### Koordination 
-
-::: {.grid}
-
-::: {.g-col-4}
-![](mjoc.jpg)
-:::
-
-::: {.g-col-8}
-**Prof. Dr. Jochen Mayerl** <br>
-Institut für Soziologie <br>
-Soziologie mit Schwerpunkt Empirische Sozialforschung 
-
-Tel.: +49 371 531-37130 <br>
-E-Mail: [jochen.mayerl@soziologie.tu-chemnitz.de](jochen.mayerl@soziologie.tu-chemnitz.de)
-:::
-
-:::
-
-::: {.grid}
-
-::: {.g-col-4}
-![](bmas.jpg)
-:::
-
-::: {.g-col-8}
-**Britta Maskow, M.A.** <br>
-Institut für Soziologie <br>
-Soziologie mit Schwerpunkt Empirische Sozialforschung 
-
-Tel.: +49 371 531-36076 <br>
-E-Mail: [britta.maskow@soziologie.tu-chemnitz.de](britta.maskow@soziologie.tu-chemnitz.de)
-:::
-
-:::
-
-#### Weitere Mitglieder
-
-**Prof. Dr. Peter Kriwy**, Institut für Soziologie, Soziologie mit Schwerpunkt Gesundheitsforschung <br>
-**Prof. Dr. Christian Maiwald**, Institut für Angewandte Bewegungswissenschaften, Angewandete Bewegungswissenschaften mit Schwerpunkt auf Forschungsmethoden und Analyseverfahren in der Biomechanik <br>
-**Prof. Dr. Peter Sedlmeier**, Institut für Psychologie, Forschungsmethodik und Evaluation in der Psychologie 
 
 ## English 
 
@@ -117,6 +67,56 @@ E-Mail: [britta.maskow@soziologie.tu-chemnitz.de](britta.maskow@soziologie.tu-ch
 **Prof. Dr. Peter Kriwy**, Institute of Sociology, Sociology with Specialization in Health Research  <br>
 **Prof. Dr. Christian Maiwald**, Institute of Human Movement Science and Health, Professorship of Research Methodology and Data Analyses <br>
 **Prof. Dr. Peter Sedlmeier**, Institute of Psychology, Professorship of Research Methods and Evaluation
+
+## German 
+
+### Über das MKZ
+
+Das MethodenKompetenzZentrum (MKZ) wurde 2015 gegründet und hat sich zur Aufgabe gemacht mit Rat und Tat bei methodischen Herausforderungen zur Seite zu stehen. Durch ein vielfältiges Angebot von Workshops, methodischen Beratungen, Vorträgen, Vorlesungen und Werkstattgesprächen wollen wir eigene Forschungsvorhaben (Qualifikationsarbeiten, Forschungsprojekte, methodische Weiterentwicklungen u.v.m.) kompetent unterstützen.Das MKZ ermöglicht Studierenden und Mitarbeitenden ihre eigenen methodischen Erfahrungen und Kompetenzen interdisziplinär einzubringen und weiterzuentwickeln.
+
+Diese interdisziplinäre Kooperation des Instituts für Angewandte Bewegungswissenschaften, Instituts für Psychologie und des Instituts der Soziologie bietet eine Plattform zum Informieren, Handeln und über den Tellerrand der eigenen Disziplin zuschauen.
+
+### Koordination 
+
+::: {.grid}
+
+::: {.g-col-4}
+![](mjoc.jpg)
+:::
+
+::: {.g-col-8}
+**Prof. Dr. Jochen Mayerl** <br>
+Institut für Soziologie <br>
+Soziologie mit Schwerpunkt Empirische Sozialforschung 
+
+Tel.: +49 371 531-37130 <br>
+E-Mail: [jochen.mayerl@soziologie.tu-chemnitz.de](jochen.mayerl@soziologie.tu-chemnitz.de)
+:::
+
+:::
+
+::: {.grid}
+
+::: {.g-col-4}
+![](bmas.jpg)
+:::
+
+::: {.g-col-8}
+**Britta Maskow, M.A.** <br>
+Institut für Soziologie <br>
+Soziologie mit Schwerpunkt Empirische Sozialforschung 
+
+Tel.: +49 371 531-36076 <br>
+E-Mail: [britta.maskow@soziologie.tu-chemnitz.de](britta.maskow@soziologie.tu-chemnitz.de)
+:::
+
+:::
+
+#### Weitere Mitglieder
+
+**Prof. Dr. Peter Kriwy**, Institut für Soziologie, Soziologie mit Schwerpunkt Gesundheitsforschung <br>
+**Prof. Dr. Christian Maiwald**, Institut für Angewandte Bewegungswissenschaften, Angewandete Bewegungswissenschaften mit Schwerpunkt auf Forschungsmethoden und Analyseverfahren in der Biomechanik <br>
+**Prof. Dr. Peter Sedlmeier**, Institut für Psychologie, Forschungsmethodik und Evaluation in der Psychologie 
 
 :::
 
