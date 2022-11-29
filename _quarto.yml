@@ -4,7 +4,6 @@ project:
 
 website:
   title: "TU Chemnitz | Methods Competency Center"
-  subtitle: "MethodenKompetenzZentrum"
   navbar:
     right:
       - about.qmd
