@@ -11,14 +11,7 @@
     "href": "index.html",
     "title": "Blog for Social Science Methods",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n\nlinear regression\n\n\nresidual diagnostics\n\n\n\n\nThis brief blog post will show you how to overlay a normal density curve on a histogram. This can be helpful for comparing empirical distributions to the theoretical normal distribution, which comes up often in linear regression residual diagnostics.\n\n\n\n\n\n\nNov 25, 2022\n\n\nHenrik Kenneth Andersen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nR\n\n\nlinear regression\n\n\nresidual diagnostics\n\n\n\n\nThis brief blog post will show you how to overlay a normal density curve on a histogram. This can be helpful for comparing empirical distributions to the theoretical normal distribution, which comes up often in linear regression residual diagnostics.\n\n\n\n\n\n\nNov 25, 2022\n\n\nHenrik Kenneth Andersen\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/new-test/test.html",
-    "href": "posts/new-test/test.html",
-    "title": "test",
-    "section": "",
-    "text": "BibTeX citation:@online{kennethandersen2022,\n  author = {Henrik Kenneth Andersen},\n  title = {Test},\n  date = {2022-11-25},\n  langid = {en},\n  abstract = {This brief blog post will show you how to overlay a normal\n    density curve on a histogram. This can be helpful for comparing\n    empirical distributions to the theoretical normal distribution,\n    which comes up often in linear regression residual diagnostics.}\n}\nFor attribution, please cite this work as:\nHenrik Kenneth Andersen. 2022. “Test.” November 25, 2022."
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nR\n\n\nlinear regression\n\n\nresidual diagnostics\n\n\n\n\nThis brief blog post will show you how to overlay a normal density curve on a histogram. This can be helpful for comparing empirical distributions to the theoretical normal distribution, which comes up often in linear regression residual diagnostics.\n\n\n\n\n\n\nNov 25, 2022\n\n\nHenrik Kenneth Andersen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/normal-curve/normal-curve.html",
