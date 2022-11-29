@@ -4,6 +4,7 @@ project:
 
 website:
   title: "TU Chemnitz | Methods Competency Center" 
+  site-url: https://henrik-andersen.github.io/methods-center/ 
   twitter-card: true
   navbar:
     right:

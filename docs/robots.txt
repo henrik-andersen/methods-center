@@ -1,0 +1,1 @@
+Sitemap: https://henrik-andersen.github.io/methods-center/sitemap.xml
