@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "TU Chemnitz | Methods Competency Center"
+  title: "TU Chemnitz | Methods Competency Center" 
   navbar:
     right:
       - about.qmd
