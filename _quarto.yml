@@ -4,6 +4,7 @@ project:
 
 website:
   title: "TU Chemnitz | Methods Competency Center" 
+  twitter-card: true
   navbar:
     right:
       - about.qmd
