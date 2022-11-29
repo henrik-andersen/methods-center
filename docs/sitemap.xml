@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://henrik-andersen.github.io/methods-center/about.html</loc>
+    <lastmod>2022-11-29T18:47:05.709Z</lastmod>
+  </url>
+  <url>
     <loc>https://henrik-andersen.github.io/methods-center/index.html</loc>
-    <lastmod>2022-11-29T18:45:59.575Z</lastmod>
+    <lastmod>2022-11-29T18:47:06.094Z</lastmod>
   </url>
   <url>
     <loc>https://henrik-andersen.github.io/methods-center/posts/normal-curve/normal-curve.html</loc>
-    <lastmod>2022-11-29T18:46:00.923Z</lastmod>
+    <lastmod>2022-11-29T18:47:06.831Z</lastmod>
   </url>
 </urlset>
